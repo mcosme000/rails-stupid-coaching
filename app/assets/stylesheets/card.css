@@ -1,0 +1,18 @@
+.group {
+  padding: 10px 20px;
+  border-left: 5px solid #dddddd;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.answer-card {
+  background: #ffffe1;
+}
+
+.answer {
+  font-weight: bold;
+}
+
+.signature {
+  font-style: italic;
+}

@@ -1,0 +1,19 @@
+
+
+<div class="group question">
+  <p class="mb-0"><%= params[:question] %></p>
+  <p class="signature mb-0">-You</p>
+</div>
+
+<div class="group answer-card">
+  <% if params[:question] == @favorite_sentence %>
+  <p class="answer mb-0">Great!</p>
+  <% elsif params[:question].include?("?")%>
+  <p class="answer mb-0">Silly question, get dressed and go to work!</p>
+  <% else %>
+  <p class="answer mb-0">I don't care, get dressed and go to work!</p>
+  <% end %>
+  <p class="signature mb-0">-Your coach</p>
+</div>
+
+<a href="" class="button"><%= link_to "Ask another question", ask_path %></a>
